@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Animated, Easing, View } from "react-native";
+import { Animated, View } from "react-native";
+import { Colors } from '../../src/styles/colors';
+import InputView from './libs/parts/InputView';
+import KeyboardView from './libs/parts/KeyboardView';
+import Styles from './libs/parts/styles';
 
-import KeyboardView from './libs/parts/KeyboardView'
-import InputView from './libs/parts/InputView'
-import Styles from './libs/parts/styles'
-import PropTypes from 'prop-types'
 
 class PinView extends React.Component {
   constructor(props) {
@@ -84,17 +85,15 @@ class PinView extends React.Component {
           <InputView
               bgOpacity={inputBgOpacity}
               pinLength={pinLength}
-              activeBgColor={inputActiveBgColor}
+              bgColor={Colors.WHITE}
+              activeBgColor={Colors.WHITE}
               animatedInputIndex={this.state.animatedInputIndex}
               pinViewAnim={this.state.pinViewAnim}
-              bgColor={inputBgColor}
               styles={[Styles.passwordInputView, Styles.passwordInputViewItem, Styles.passwordInputViewItemActive]}
           />
           <View style={Styles.keyboardView}>
             <KeyboardView
                 styles={[Styles.keyboardViewItem, Styles.keyboardViewItemText]}
-                bgColor={buttonBgColor}
-                textColor={buttonTextColor}
                 animatedDeleteButton={this.state.animatedDeleteButton}
                 pinLength={pinLength}
                 deleteText={deleteText}

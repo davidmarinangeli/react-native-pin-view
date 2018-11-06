@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   //passwordInputView
@@ -9,18 +9,18 @@ export default StyleSheet.create({
   passwordInputViewItem      : {
     alignItems     : 'center',
     justifyContent : 'center',
-    height         : 35,
+    height         : 18,
     margin         : 5,
-    width          : 35,
-    borderRadius   : 35 / 2,
+    width          : 18,
+    borderRadius   : 18 / 2,
   },
   passwordInputViewItemActive: {
     alignItems     : 'center',
     justifyContent : 'center',
-    height         : 35,
-    width          : 35,
+    height         : 18,
+    width          : 18,
     margin         : 5,
-    borderRadius   : 35 / 2,
+    borderRadius   : 18 / 2,
   },
   // KeyboardView
   keyboardView               : {
@@ -34,7 +34,6 @@ export default StyleSheet.create({
     width           : 75,
     marginHorizontal: 20,
     marginVertical  : 5,
-    borderRadius    : 75 / 2,
   },
   keyboardViewItemText       : {
     fontSize  : 22,
