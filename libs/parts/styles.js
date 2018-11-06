@@ -25,14 +25,14 @@ export default StyleSheet.create({
   // KeyboardView
   keyboardView               : {
     alignItems: 'center',
-    marginTop : 35
+    marginTop : 16
   },
   keyboardViewItem           : {
     alignItems      : 'center',
     justifyContent  : 'center',
     height          : 75,
     width           : 75,
-    marginHorizontal: 20,
+    marginHorizontal: 16,
     marginVertical  : 5,
   },
   keyboardViewItemText       : {
