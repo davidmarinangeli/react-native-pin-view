@@ -1,5 +1,6 @@
 import React from 'react';
-import { Animated, FlatList, TouchableOpacity } from 'react-native';
+import { Animated, FlatList } from 'react-native';
+import Touchable from 'react-native-platform-touchable';
 import { SubHead } from '../../../../src/components/ficTypographies/SubHead';
 import { Colors } from '../../../../src/styles/colors';
 
@@ -31,11 +32,7 @@ const KeyboardView = ({
       style = [styles[0]];
     }
     return (
-      <TouchableOpacity
-        activeOpacity={0.85}
-        onPress={() => keyboardOnPress(item, returnType, pinLength, onComplete)}
-        disabled={onPressActive}
-      >
+      <Touchable onPress={() => keyboardOnPress(item, returnType, pinLength, onComplete)} disabled={onPressActive}>
         <Animated.View
           style={[
             style,
@@ -53,7 +50,7 @@ const KeyboardView = ({
             text={item}
           />
         </Animated.View>
-      </TouchableOpacity>
+      </Touchable>
     );
   };
   return (

@@ -81,7 +81,7 @@ class PinView extends React.Component {
   render() {
     const { pinLength, buttonTextColor, returnType, buttonBgColor, inputBgColor, onComplete, disabled, inputActiveBgColor, inputBgOpacity, deleteText } = this.props;
     return (
-        <View pointerEvents={disabled ? "none" : undefined}>
+        <View style={Styles.rootStyle} pointerEvents={disabled ? "none" : undefined}>
           <InputView
               bgOpacity={inputBgOpacity}
               pinLength={pinLength}
@@ -117,7 +117,7 @@ PinView.defaultProps = {
   returnType: 'string',
   inputBgOpacity: 0.1,
   disabled: false,
-  clear: false,
+  clear: false
 };
 PinView.propTypes = {
   disabled: PropTypes.bool,
@@ -130,7 +130,7 @@ PinView.propTypes = {
   inputBgOpacity: PropTypes.number,
   onComplete: PropTypes.func.isRequired,
   pinLength: PropTypes.number.isRequired,
-  clear: PropTypes.bool,
+  clear: PropTypes.bool
 };
 
 export default PinView
