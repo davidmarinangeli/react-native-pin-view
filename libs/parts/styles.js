@@ -1,7 +1,6 @@
 import { Dimensions, StyleSheet } from 'react-native';
 import { isTablet } from '../../../../src/utils/deviceChecker';
 
-
 export default StyleSheet.create({
   //passwordInputView
   passwordInputView: {
@@ -47,5 +46,12 @@ export default StyleSheet.create({
     height: 124,
     backgroundColor: 'transparent'
   },
-  rootStyle: { flex: 1, flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }
+  rootStyle: {
+    flex: 1,
+    position: 'absolute',
+    bottom: 0,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  }
 });
